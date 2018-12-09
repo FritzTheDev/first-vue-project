@@ -1,3 +1,13 @@
+/* General */
 .bg-dark {
   background-color: slategray !important;
+}
+.bg-primary {
+  background-color: darkorange !important;
+}
+
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.75em !important;
 }
