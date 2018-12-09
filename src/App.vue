@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <Navbar />
+    <Home />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-
+import Home from './components/Home.vue'
 export default {
   name: 'app',
   metaInfo: {
@@ -16,7 +17,8 @@ export default {
     ]
   },
   components: {
-    Navbar
+    Navbar,
+    Home
   },
 }
 </script>

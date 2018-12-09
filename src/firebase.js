@@ -1,5 +1,5 @@
 import Firebase from 'firebase/app'
-import 'firebase/firestore';
+import 'firebase/firestore'
 const firebaseApp = Firebase.initializeApp({
   apiKey: "AIzaSyDHz6VHvkLjr4S44qfpjdsaJv94zUwI-is",
   authDomain: "loaded-a689b.firebaseapp.com",
@@ -8,5 +8,8 @@ const firebaseApp = Firebase.initializeApp({
   storageBucket: "loaded-a689b.appspot.com",
   messagingSenderId: "339918962089"
 })
-
-export const db = firebaseApp.firestore();
+const settings = {
+  timestampsInSnapshots: true
+}
+export const db = firebaseApp.firestore()
+db.settings(settings)
